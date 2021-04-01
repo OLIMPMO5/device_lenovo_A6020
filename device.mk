@@ -220,8 +220,7 @@ PRODUCT_COPY_FILES += \
 # RIL
 PRODUCT_PACKAGES += \
     libcnefeatureconfig \
-    librmnetctl \
-    libxml2
+    librmnetctl 
 
 # RRO
 PRODUCT_ENFORCE_RRO_TARGETS += \
