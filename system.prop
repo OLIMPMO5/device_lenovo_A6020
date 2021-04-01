@@ -54,6 +54,11 @@ sys.vendor.shutdown.waittime=500
 
 # Camera
 persist.camera.cpp.duplication=false
+persist.camera.mct.debug=0
+persist.camera.iface.logs=0
+persist.camera.imglib.logs=0
+persist.camera.isp.debug=0
+persist.camera.sensor.debug=0
 
 # Charger
 persist.sys.chgdisabled=0
@@ -109,6 +114,7 @@ ro.lmk.enhance_batch_kill=true
 ro.lmk.vmpressure_file_min=80640
 
 # Media
+vendor.vidc.debug.level=0
 debug.stagefright.ccodec=0
 debug.stagefright.omx_default_rank=0
 debug.stagefright.omx_default_rank.sw-audio=1
