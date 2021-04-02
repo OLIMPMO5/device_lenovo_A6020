@@ -220,7 +220,7 @@ PRODUCT_COPY_FILES += \
 # RIL
 PRODUCT_PACKAGES += \
     libcnefeatureconfig \
-    librmnetctl 
+    librmnetctl
 
 # RRO
 PRODUCT_ENFORCE_RRO_TARGETS += \
@@ -355,3 +355,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl \
     android.hardware.vibrator@1.0-service
+
+# Health
+PRODUCT_PACKAGES += \
+		android.hardware.health@2.0-impl \
+		android.hardware.health@2.0-service
