@@ -377,8 +377,8 @@ service wpa_supplicant /vendor/bin/hw/wpa_supplicant \
     disabled
     oneshot
 
-service ril-daemon2 /vendor/bin/hw/rild -c 2 
-    class main 
+service ril-daemon2 /vendor/bin/hw/rild -c 2
+    class main
     user radio
     group radio cache inet misc audio log readproc wakelock
     capabilities BLOCK_SUSPEND NET_ADMIN NET_RAW
@@ -401,10 +401,9 @@ on charger
     chmod 0664 /sys/class/power_supply/bms/voltage_ocv
     write /sys/module/lpm_levels/parameters/sleep_disabled 0
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor "powersave"
-    load_system_props
     start vm_bms
     start power_off_alarm
-    
+
 service vm_bms /system/vendor/bin/vm_bms
     class main
     user root
@@ -519,4 +518,3 @@ on property:sys.boot_completed=1
 
     # Disable sleep_disabled in LPM
     write /sys/module/lpm_levels/parameters/sleep_disabled 0
-
