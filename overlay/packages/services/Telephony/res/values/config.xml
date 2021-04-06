@@ -18,4 +18,6 @@
     <!-- Show enabled lte option for lte device -->
     <bool name="config_enabled_lte" translatable="false">true</bool>
 
+    <!-- String indicating the package name of the device ImsService implementation for RCS. -->
+    <string name="config_ims_rcs_package" translatable="false">org.codeaurora.ims</string>
 </resources>
