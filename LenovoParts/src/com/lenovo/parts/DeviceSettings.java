@@ -36,7 +36,7 @@ public class DeviceSettings extends PreferenceFragment implements
 
     // Haptic feedback
     public static final String PREF_VIBRATION_STRENGTH = "vibration_strength";
-    public static final String VIBRATION_STRENGTH_PATH = "/sys/devices/virtual/timed_output/vibrator/vtg_level";
+    public static final String VIBRATION_STRENGTH_PATH = "/sys/class/timed_output/vibrator/vtg_level";
     public static final int MIN_VIBRATION = 116;
     public static final int MAX_VIBRATION = 3596;
 
