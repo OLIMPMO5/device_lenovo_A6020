@@ -61,6 +61,7 @@ persist.camera.isp.debug=0
 persist.camera.sensor.debug=0
 
 # Charger
+ro.charger.enable_suspend=true
 persist.sys.chgdisabled=0
 
 # Bettery
