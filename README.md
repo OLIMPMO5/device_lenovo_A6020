@@ -37,4 +37,4 @@ Lenovo Vibe K5 Plus (LA) (Dual SIM) | A6020l36 | SD616, 2GB, 1080p
 Lenovo Vibe K5 Plus (LA) (Single SIM) | A6020l37 | SD616, 2GB, 1080p
 Lenovo Lemon 3 (CN) | K32C36 | SD616, 2GB, 1080p
 
-![Lenovo Vibe K5](http://cdn2.gsmarena.com/vv/bigpic/lenovo-k5.jpg "Lenovo Vibe K5")
+![Lenovo Vibe K5](https://www.ferra.ru/thumb/860x0/filters:quality(75):no_upscale()/imgs/2018/11/26/19/2798909/5da231a8deaacb11124a5157691c4c497bfdfb9b.png "Lenovo Vibe K5")
