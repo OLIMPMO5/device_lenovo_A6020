@@ -66,7 +66,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     camera.msm8916 \
     libbson \
-    Snap \
+    Camera2 \
     android.hardware.camera.provider@2.4-impl \
     camera.device@3.2-impl
 
