@@ -1,7 +1,9 @@
 # system.prop for A6020
 
+# ADB
 persist.service.adb.enable=1
 
+# PixelExperience device
 org.pixelexperience.version=A6020
 
 # Logcat
