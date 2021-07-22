@@ -1,0 +1,14 @@
+[
+  {
+    "remote":      "github",
+    "repository":  "hsj51/kernel_lenovo_msm8916",
+    "target_path": "kernel/lenovo/msm8916",
+    "branch":      "10.x"
+  },
+  {
+    "remote":      "github",
+    "repository":  "hsj51/vendor_lenovo_A6020",
+    "target_path": "vendor/lenovo/A6020",
+    "branch":      "10.x"
+  }
+]
