@@ -6,9 +6,6 @@ persist.service.adb.enable=1
 # PixelExperience device
 org.pixelexperience.version=A6020
 
-# Logcat
-logcat.live=disable
-
 # Audio
 ro.ril.enable.amr.wideband=1
 ro.config.media_vol_steps=25
@@ -42,6 +39,11 @@ audio.offload.disable=1
 av.offload.enable=true
 vendor.audio.dolby.ds2.enabled=true
 
+# Bettery
+wifi.supplicant_scan_interval=200
+pm.sleep_mode=3
+ro.ril.disable.power.collapse=0
+
 # Bluetooth
 vendor.bluetooth.soc=pronto
 vendor.qcom.bluetooth.soc=pronto
@@ -65,11 +67,6 @@ persist.camera.sensor.debug=0
 # Charger
 ro.charger.enable_suspend=true
 persist.sys.chgdisabled=0
-
-# Bettery
-wifi.supplicant_scan_interval=200
-pm.sleep_mode=3
-ro.ril.disable.power.collapse=0
 
 # Dalvik
 dalvik.vm.heapsize=32m
@@ -99,8 +96,6 @@ persist.vendor.dpm.feature=1
 persist.vendor.dpmhalservice.enable=1
 persist.vendor.dpm.loglevel=0
 persist.vendor.mwqem.enable=1
-
-# DRM
 drm.service.enabled=1
 
 # IMS
@@ -125,6 +120,12 @@ ro.lmk.use_minfree_levels=true
 ro.lmk.enhance_batch_kill=true
 ro.lmk.vmpressure_file_min=80640
 
+# Logcat
+logcat.live=disable
+
+# Low audio flinger standby delay to reduce power consumption
+ro.audio.flinger_standbytime_ms=300
+
 # Media
 vendor.vidc.debug.level=0
 debug.stagefright.ccodec=0
@@ -139,30 +140,27 @@ media.stagefright.less-secure=true
 persist.debug.wfd.enable=1
 persist.sys.wfd.virtual=1
 
-# Perf
-ro.vendor.qti.sys.fw.bservice_enable=true
-persist.sys.fflag.override.settings_fuse=false
-
 # Memory optimizations
 ro.vendor.qti.sys.fw.bservice_enable=true
 ro.vendor.qti.am.reschedule_service=true
 
-# Qualcomm
-persist.data.qmi.adb_logmask=0
-ro.qualcomm.cabl=2
-ro.sys.fw.dex2oat_thread_count=8
-
-#low audio flinger standby delay to reduce power consumption
-ro.audio.flinger_standbytime_ms=300
-
 # ParanoidDoze
 ro.sensor.proximity=true
+
+# Perf
+ro.vendor.qti.sys.fw.bservice_enable=true
+persist.sys.fflag.override.settings_fuse=false
 
 # Play store
 ro.com.google.clientidbase.am=android-lenovo
 ro.com.google.clientidbase.gmm=android-lenovo
 ro.com.google.clientidbase.ms=android-lenovo
 ro.com.google.clientidbase.yt=android-lenovo
+
+# Qualcomm
+persist.data.qmi.adb_logmask=0
+ro.qualcomm.cabl=2
+ro.sys.fw.dex2oat_thread_count=8
 
 # Qualcomm® aptX™
 persist.bt.enableAptXHD=true
