@@ -1,4 +1,4 @@
-# Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2018 The PixelExperience Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,8 +21,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_l_mr1.mk
 # Inherit from A6020 device
 $(call inherit-product, device/lenovo/A6020/device.mk)
 
-# Inherit some common AEX stuff
-$(call inherit-product, vendor/aosp/common.mk)
+# Inherit some common PixelExperience  stuff
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Boot animation
 TARGET_SCREEN_WIDTH := 1080
@@ -39,11 +39,19 @@ PRODUCT_MANUFACTURER := Lenovo
 
 PRODUCT_GMS_CLIENTID_BASE := android-lenovo
 
+# Fisuri OTA
+CUSTOM_BUILD_TYPE := OFFICIAL
+IS_FISURI_VERSION := true
+
+# ADB props
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.usb.config=mtp,adb \
+    ro.adb.secure=0 \
+    ro.secure=0 \
+    ro.debuggable=1
+
 # Use Gapps
-# Set this flag in build script
-ifeq ($(CURRENT_BUILD_TYPE), gapps)
 TARGET_SHIPS_SEPERATE_GAPPS_BUILD := true
 WITH_GAPPS := true
 TARGET_GAPPS_ARCH := arm64
 IS_PHONE := true
-endif
