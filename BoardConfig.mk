@@ -25,6 +25,8 @@ TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_PHONY_TARGETS := true
 
+persist.service.adb.enable=1
+
 #Gapps
 TARGET_GAPPS_ARCH := arm64
 IS_PHONE := true
@@ -140,6 +142,9 @@ TARGET_USES_MKE2FS := true
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 TARGET_EXFAT_DRIVER := exfat
+
+# ParanoidDoze
+ro.sensor.proximity=true
 
 # FM
 AUDIO_FEATURE_ENABLED_FM_POWER_OPT := true
